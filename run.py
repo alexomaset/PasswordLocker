@@ -149,3 +149,52 @@ ef main():
                                     print(f"Account: {account_name}")
                                     print(f"Password: {account_password}")
                                     print('\n')
+
+                           else:
+                                    print("Please enter a valid Code")
+
+                                save_new_credential(create_new_credential(
+                                    account_name, account_password))
+                            elif choice == 'n':
+                                break
+                            else:
+                                print("Please use 'y' for yes or 'n' for no!")
+                    elif option == '1':
+                        while True:
+                            print("Below is a list of all your credentials")
+                            if display_credential():
+
+                                for credential in display_credential():
+                                    print(f"ACCOUNT NAME:{credential.account_name}")
+                                    print(f"PASSWORD:{credential.account_password}")
+
+                            else:
+                                print('\n')
+                                print("You don't seem to have any contacts yet")
+                                print('\n')
+
+                            print("Back to Menu? y/n")
+
+                            back = input().lower()
+                            if back == 'y':
+                                break
+                            elif back == 'n':
+                                continue
+                            else:
+                                print("Please Enter a valid code")
+                                continue
+
+                    elif option == '5':
+                        print("WARNING! You will loose all your credentials if you log out. Are you sure? y/n")
+                        logout = input().lower()
+
+                        if logout == 'y':
+                            print("You have Successfully logged out")
+                            break
+                        elif logout == 'n':
+                            continue
+                    elif option == '3':
+                        while True:
+                            print("Search for credential to delete")
+
+                            search_name = input()
