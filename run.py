@@ -67,3 +67,42 @@ def delete_credential(credential):
     """
     return Credential.delete_credential(credential)
 
+
+
+
+
+ef main():
+
+    while True:
+        print("Welcome to PassWord Locker.")
+        print('\n')
+        print("Use these short codes to select an option: Create New User use 'cu': Login to your account use 'lg' or 'ex' to exit password locker")
+        short_code = input().lower()
+        print('\n')
+
+        if short_code == 'cu':
+        
+
+            print("Create a UserName")
+            created_user_name = input()
+
+            print("Select a Password")
+            created_user_password = input()
+
+            print("Confirm Your Password")
+            confirm_password = input()
+
+            while confirm_password != created_user_password:
+                print("Sorry your passwords did not match!")
+                print("Enter a password")
+                created_user_password = input()
+                print("Confirm Your Password")
+                confirm_password = input()
+            else:
+                print(f"Congratulations {created_user_name}! You have created your new account.")
+                print('\n')
+                print("Proceed to Log In to your Account")
+                print("Username")
+                entered_userName = input()
+                print("Your Password")
+                entered_password = input()
