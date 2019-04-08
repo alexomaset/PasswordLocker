@@ -264,7 +264,7 @@ def main():
                 print('\n')
 
             while True:
-                print("1:  saved credentials")
+                print("1: saved credentials")
                 print("2: Add new credentials")
                 print("3: Remove credentials")
                 print("4: Search credentials")
