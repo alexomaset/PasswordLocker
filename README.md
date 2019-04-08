@@ -35,4 +35,15 @@ Python 3.6
 * From the terminal navigate to the cloned project folder.
 
 * Open terminal and go to the project folder, run $ python3.6 run.py
+
+## Contacts
+
+* Alexomaset711@gmail.com
+* 0727952163
+
+## Licence
+ 
+ * MIT Licence
+
+ * Copyright (c) 2019 Alex Omaset
                         
