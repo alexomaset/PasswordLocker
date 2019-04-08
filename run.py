@@ -131,3 +131,21 @@ ef main():
                     if option == '2':
                         while True:
                             print("Continue to add? y/n")
+
+                            choice = input().lower()
+                            if choice == 'y':
+                                print("Enter The Account Name")
+                                account_name = input()
+                                print("Enter a password")
+                                print(
+                                    "To generate  password enter keyword 'n' to create your own password")
+                                keyword = input().lower()
+                                if keyword == 'gp':
+                                    
+                                    print('\n')
+                                elif keyword == 'n':
+                                    print("Create your password")
+                                    account_password = input()
+                                    print(f"Account: {account_name}")
+                                    print(f"Password: {account_password}")
+                                    print('\n')
