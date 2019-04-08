@@ -106,3 +106,28 @@ ef main():
                 entered_userName = input()
                 print("Your Password")
                 entered_password = input()
+
+ while entered_userName != created_user_name or entered_password != created_user_password:
+                    print("You entered a wrong username or password")
+                    print("Username")
+                    entered_userName = input()
+                    print("Your Password")
+                    entered_password = input()
+                else:
+                    print(f"Welcome: {entered_userName} to your Account")
+                    print('\n')
+
+                    print("Select an option below to continue: Enter 1, 2, 3, 4 or 5")
+                    print('\n')
+
+                while True:
+                    print("1: View Your saved credentials")
+                    print("2: Add new credentials")
+                    print("3: Remove credentials")
+                    print("4: Search credentials")
+                    print("5: Log Out")
+                    option = input()
+
+                    if option == '2':
+                        while True:
+                            print("Continue to add? y/n")
