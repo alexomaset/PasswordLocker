@@ -1,4 +1,4 @@
-import pyperclip
+
 class User:
   """
   class that generates new instances of user
