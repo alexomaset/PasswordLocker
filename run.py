@@ -66,3 +66,4 @@ def delete_credential(credential):
     Method that deletes credentials
     """
     return Credential.delete_credential(credential)
+

@@ -4,7 +4,7 @@ class User:
   class that generates new instances of user
   """
 
-  user_detail = [] # Empty contact list 
+  user_detail = [] # Empty list 
 
   def __init__(self,account_name,user_name,password , confirm_password):
 
